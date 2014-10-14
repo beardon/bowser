@@ -1,2 +1,2 @@
 #!/bin/sh
-ansible-playbook -i development.ini bower-test.yml -K
+ansible-playbook -i development.ini bowser.yml -K

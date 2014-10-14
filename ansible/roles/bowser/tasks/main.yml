@@ -6,5 +6,8 @@
 - name: check out bowser source
   git: repo=git@github.com:beardon/bowser.git dest={{ prefix }} version={{ bowser_version }} accept_hostkey=true
 
+#- name: install bower dependencies
+#  command: bower install chdir={{ prefix }}
+
 - name: install bower dependencies
-  command: bower install chdir={{ prefix }}
+  bower: path={{ prefix }} production=yes

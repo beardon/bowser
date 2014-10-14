@@ -10,6 +10,6 @@
 
 - hosts: server
   roles:
-    - bower-test
+    - bowser
     - slack
   remote_user: "{{ ansible_user }}"

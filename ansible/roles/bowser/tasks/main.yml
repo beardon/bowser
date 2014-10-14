@@ -3,8 +3,8 @@
   file: path={{ prefix }} owner={{ ansible_user }} group=www state=directory
   sudo: yes
 
-- name: check out bower-test source
-  git: repo=git@github.com:beardon/bower-test.git dest={{ prefix }} version={{ bower_test_version }} accept_hostkey=true
+- name: check out bowser source
+  git: repo=git@github.com:beardon/bowser.git dest={{ prefix }} version={{ bowser_version }} accept_hostkey=true
 
 - name: install bower dependencies
   command: bower install chdir={{ prefix }}
